@@ -57,7 +57,7 @@ function Todo() {
             if (data.isDone === true) {
               return (
                 <div key={data.id}>
-                  <Link to="/details">자세히</Link>
+                  <Link to={`/details/${data.id}`}>자세히</Link>
                   <h2> {data.title}</h2>
                   <p>{data.content}</p>
                   <button
